@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EnrollmentService } from '../../services/enrollment.service';
 import { Enrollment } from '../../models/enrollment.model';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-mentor-students-list',
@@ -10,13 +11,20 @@ import { Enrollment } from '../../models/enrollment.model';
 export class MentorStudentsListComponent implements OnInit {
   enrollment: Enrollment[] = [];
 
-      constructor(private enrollmentService: EnrollmentService) {}
+      constructor(private userService:UserService,private enrollmentService: EnrollmentService) {}
 
       ngOnInit(): void {
-          this.enrollmentService.getStudents(mentorId: number).subscribe((data: Enrollment[]) => {
+       
+        const mentorID = this.userService.getUserId();
+         if(mentorID!=undefined)
+         {
+          this.enrollmentService.getStudents(mentorID).subscribe((data: Enrollment[]) => {
             console.log('Fetched Students:', data); // Debugging line to check the fetched data
             this.enrollment = data;
           });
+         }
+         
+          
         }
 
 }

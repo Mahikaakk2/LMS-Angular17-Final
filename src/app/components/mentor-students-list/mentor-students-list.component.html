@@ -1,15 +1,15 @@
-<!--<app-header></app-header>-->
+<app-header></app-header>
 
-<!--<div class="container">-->
-<!--  <h2 class="heading-text">All Learners</h2>-->
+<div class="container">
+ <h2 class="heading-text">All Learners</h2>
 
-<!--  <div class="row">-->
-<!--    <div class="col-md-4" *ngFor="let student of Enrollment">-->
-<!--        <div class="card-body">-->
-<!--          <h3 class="card-title">Student ID: {{ student. EnrollmentID }}</h3>-->
-<!--          <p class="card-text">Query Text: {{ student.CourseID }}</p>-->
-<!--          <p class="card-text">Response: {{ student.newJoinerId }}</p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
+ <div class="row">
+   <div class="col-md-4" *ngFor="let e of enrollment">
+          <div class="card-body">
+         <!-- <h3 class="card-title">Enrollment ID: {{ e.enrollmentID }}</h3> -->
+         <p class="card-text">Course ID: {{ e.courseID }}</p>
+         <p class="card-text">Student ID: {{ e.newJoinID }}</p>
+       </div>
+     </div>
+     </div>
+   
