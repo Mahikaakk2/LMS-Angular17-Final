@@ -64,6 +64,11 @@
         <div class="text" style="font-family: 'aladin'; letter-spacing: 1px; font-size: 35px; font-weight: bolder; color: rgb(5, 44, 42);">My Learners</div>
 <!--        <div class="sub-text" *ngFor="let count of enrollmentcount | async">{{count}} enrollments have been <br>made by <b *ngFor="let enrollment of enrollments | async">{{enrollment}}</b> Learners</div>-->
       </div>
+      <div class="dashboard-card" [routerLink]="['/mentorQueries']" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
+        <div class="circle"><i id="icons2" style="margin-left: 15px;" class="fa fa-graduation-cap"></i></div>
+        <div class="text" style="font-family: 'aladin'; letter-spacing: 1px; font-size: 35px; font-weight: bolder; color: rgb(5, 44, 42);">Queries</div>
+<!--        <div class="sub-text" *ngFor="let count of enrollmentcount | async">{{count}} enrollments have been <br>made by <b *ngFor="let enrollment of enrollments | async">{{enrollment}}</b> Learners</div>-->
+      </div>
 
     </div>
   </div>

@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Mentor Queries</h2>
+  <div *ngFor="let query of queries" class="query-card">
+    <div class="query-details">
+      <p class="small-text"><strong>Query ID:</strong> {{ query.queryId }}</p>
+      <p class="small-text"><strong>Student ID:</strong> {{ query.newJoinerId }}</p>
+      <p><strong>Query Text:</strong> {{ query.queryText }}</p>
+      <div>
+        <textarea [(ngModel)]="query.responseText" rows="4" cols="50"></textarea>
+        <button (click)="submitResponse(query)" class="submit-response-button">Submit Response</button>
+  </div>
+</div>

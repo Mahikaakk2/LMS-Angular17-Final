@@ -21,6 +21,12 @@ import { StudentQueriesComponent } from './components/student-queries/student-qu
 import { MentorListComponent } from './components/mentor-list/mentor-list.component';
 import { NewJoinerListComponent } from './components/new-joiner-list/new-joiner-list.component';
 import { UpdatecourseComponent } from './components/updatecourse/updatecourse.component';
+import { ListQueriesComponent } from './components/list-queries/list-queries.component';
+import { MentorQueriesComponent } from './components/mentor-queries/mentor-queries.component';
+import { NewJoinerCoursesComponent } from './components/new-joiner-courses/new-joiner-courses.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -40,7 +46,11 @@ import { UpdatecourseComponent } from './components/updatecourse/updatecourse.co
     CourselistfalseComponent,
     MentorListComponent,
     NewJoinerListComponent,
-    UpdatecourseComponent
+    UpdatecourseComponent,
+    ListQueriesComponent,
+    MentorQueriesComponent,
+    NewJoinerCoursesComponent,
+  
   ],
   imports: [
     BrowserModule,

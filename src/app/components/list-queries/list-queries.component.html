@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Queries</h2>
+    <div *ngFor="let query of queries" class="query-card">
+      <h3 class="query-id">Query ID: {{ query.queryId }}</h3>
+      <h3 class="mentor-id">Mentor ID: {{ query.mentorId }}</h3>
+      <p class="query-text"><strong>Query :</strong> {{ query.queryText }}</p>
+      <p class="response-text" *ngIf="query.responseText"><strong>Response :</strong> {{ query.responseText }}</p>
+    </div>
+  </div>
+  

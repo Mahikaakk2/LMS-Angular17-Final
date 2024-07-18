@@ -13,6 +13,10 @@ import { StudentQueriesComponent } from './components/student-queries/student-qu
 import { MentorListComponent } from './components/mentor-list/mentor-list.component';
 import { NewJoinerListComponent } from './components/new-joiner-list/new-joiner-list.component';
 import { UpdatecourseComponent } from './components/updatecourse/updatecourse.component';
+import { ListQueriesComponent } from './components/list-queries/list-queries.component';
+import { MentorQueriesComponent } from './components/mentor-queries/mentor-queries.component';
+import { NewJoinerCoursesComponent } from './components/new-joiner-courses/new-joiner-courses.component';
+
 
 const routes: Routes = [
   { path: '', component: WelcomepageComponent },
@@ -28,7 +32,11 @@ const routes: Routes = [
   { path: 'courselistfalse', component: CourselistfalseComponent },
   { path: 'mentorlist', component: MentorListComponent },
   { path: 'newjoinerlist', component: NewJoinerListComponent },
-  { path: 'updatecourse', component: UpdatecourseComponent }
+  { path: 'updatecourse', component: UpdatecourseComponent },
+  {path: 'listNewJoinerQueries' , component: ListQueriesComponent},
+  {path:'mentorQueries',component: MentorQueriesComponent},
+  {path:'newJoinerCourses',component: NewJoinerCoursesComponent},
+  
 
 
 ];
