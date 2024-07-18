@@ -38,7 +38,8 @@
         </div>
         <div class="dashboard-card" [routerLink]="['/courseliststudent']" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
           <div class="circle"><i id="icons" style="margin-left: 25px;" class="fa fa-trophy"></i></div>
-          <div class="text">Approved Courses</div>
+          <!-- <div class="text">Approved Courses</div> -->
+          <label class="text" [routerLink]="['/courselisttrue']" style="cursor: pointer;">Approved Courses</label>
         </div>
         <div class="dashboard-card" [routerLink]="['/newjoinerlist']" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
           <div class="circle"><i id="icons" style="margin-left: 15px;" class="fa fa-graduation-cap"></i></div>

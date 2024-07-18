@@ -9,6 +9,7 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
 import { AddcourseComponent } from './components/addcourse/addcourse.component';
 import { CourseliststudentComponent } from './components/courseliststudent/courseliststudent.component';
 import { CourselistfalseComponent } from './components/courselistfalse/courselistfalse.component';
+import { CourselisttrueComponent } from './components/courselisttrue/courselisttrue.component';
 import { StudentQueriesComponent } from './components/student-queries/student-queries.component';
 import { MentorListComponent } from './components/mentor-list/mentor-list.component';
 import { NewJoinerListComponent } from './components/new-joiner-list/new-joiner-list.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'courselistfalse', component: CourselistfalseComponent },
   { path: 'student-queries', component: StudentQueriesComponent },
   { path: 'courselistfalse', component: CourselistfalseComponent },
+  { path: 'courselisttrue', component: CourselisttrueComponent },
   { path: 'mentorlist', component: MentorListComponent },
   { path: 'newjoinerlist', component: NewJoinerListComponent }
 

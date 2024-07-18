@@ -1,4 +1,5 @@
-<!--<app-header></app-header>-->
+<app-header></app-header>
+
 <div class="sidebar">
   <div class="logo-details">
     <i class='fa fa-bars'></i>
@@ -23,7 +24,7 @@
       <span class="tooltip">My Courses</span>
     </li>
 
-    <li [routerLink]="['/courselist']">
+    <li [routerLink]="['/courselisttrue']">
       <a>
         <i class='fa fa-list' ></i>
         <span class="links_name">All Course List</span>
@@ -56,7 +57,9 @@
 
       <div class="dashboard-card"style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
         <div class="circle"><i id="icons" style="margin-left: 25px;" class="fa fa-trophy"></i></div>
-        <div class="text" style="font-family: 'aladin'; letter-spacing: 1px; font-size: 35px; font-weight: bolder; color: rgb(5, 44, 42);">My Courses</div>
+        <div class="text" style="font-family: 'aladin'; letter-spacing: 1px; font-size: 35px; font-weight: bolder; color: rgb(5, 44, 42);">My Courses
+          <!-- <button type="button" class="btn btn-sm btn-outline-secondary" (click)="getCourseByMentor(course.createdBy)">Approve Now</button> -->
+        </div>
 <!--        <div class="sub-text" *ngFor="let course of courses | async">{{course}} courses available</div>-->
       </div>
       <div class="dashboard-card" style="background-color: white; box-shadow: 4px 4px 25px 5px gray;">
@@ -70,4 +73,4 @@
 </div>
 
 <br><br><br><br>
-<!--<app-footer></app-footer>-->
+<app-footer></app-footer>
