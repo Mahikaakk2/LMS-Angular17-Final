@@ -12,6 +12,7 @@ import { CourselistfalseComponent } from './components/courselistfalse/courselis
 import { StudentQueriesComponent } from './components/student-queries/student-queries.component';
 import { MentorListComponent } from './components/mentor-list/mentor-list.component';
 import { NewJoinerListComponent } from './components/new-joiner-list/new-joiner-list.component';
+import { MentorStudentsListComponent } from './components/mentor-students-list/mentor-students-list.component';
 
 const routes: Routes = [
   { path: '', component: WelcomepageComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'student-queries', component: StudentQueriesComponent },
   { path: 'courselistfalse', component: CourselistfalseComponent },
   { path: 'mentorlist', component: MentorListComponent },
-  { path: 'newjoinerlist', component: NewJoinerListComponent }
+  { path: 'newjoinerlist', component: NewJoinerListComponent },
+  { path: 'mentor-students-list', component: MentorStudentsListComponent }
 
 ];
 
