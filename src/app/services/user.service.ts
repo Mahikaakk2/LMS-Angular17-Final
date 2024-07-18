@@ -7,10 +7,13 @@ export class UserService {
   private userId: number | undefined;
   private email: string | undefined;
 
-  constructor() {}
+  constructor() {
+    this.loadUserFromLocalStorage();
+  }
 
   setUserId(userId: number) {
     this.userId = userId;
+    localStorage.setItem('userId', userId.toString());
   }
 
   getUserId(): number | undefined {
@@ -19,6 +22,7 @@ export class UserService {
 
   setEmail(email: string) {
     this.email = email;
+    localStorage.setItem('email', email);
   }
 
   getEmail(): string | undefined {
@@ -28,6 +32,20 @@ export class UserService {
   clearUser() {
     this.userId = undefined;
     this.email = undefined;
+    localStorage.removeItem('userId');
     localStorage.removeItem('email');
+  }
+
+  private loadUserFromLocalStorage() {
+    const userId = localStorage.getItem('userId');
+    const email = localStorage.getItem('email');
+
+    if (userId) {
+      this.userId = parseInt(userId, 10);
+    }
+
+    if (email) {
+      this.email = email;
+    }
   }
 }
