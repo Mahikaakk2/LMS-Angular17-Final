@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
+import { UserService } from '../../services/user.service';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,49 +10,18 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  loggedUser = '';
-  currRole = '';
-  title = '';
+ loggedUser: string | undefined;
 
-  constructor(private activatedRoute: ActivatedRoute, private _router : Router) { }
+  constructor(private userService: UserService, private router: Router) {}
 
   ngOnInit(): void
   {
-    this.loggedUser = JSON.stringify(sessionStorage.getItem('loggedUser')|| '{}');
-    this.loggedUser = this.loggedUser.replace(/"/g, '');
-
-    this.currRole = JSON.stringify(sessionStorage.getItem('ROLE')|| '{}');
-    this.currRole = this.currRole.replace(/"/g, '');
-
-    if(this.loggedUser === "admin@gmail.com"){
-      this.title = "Admin Dashboard";
-    }
-    else if(this.currRole === "professor"){
-      this.title = "";
-    }
-    else if(this.currRole === "user"){
-      this.title = "";
-    }
+    this.loggedUser = this.userService.getEmail();
   }
 
-  logout()
-  {
-    sessionStorage.clear();
-    this._router.navigate(['/login']);
-  }
-
-  navigateHome()
-  {
-    if(this.loggedUser === "admin@gmail.com"){
-      this._router.navigate(['/adminDashboard']);
+   logout() {
+      this.userService.clearUser();
+      this.router.navigate(['/login']);
     }
-    else if(this.currRole === "mentor"){
-      this._router.navigate(['/mentorDashboard']);
-    }
-    else if(this.currRole === "newjoiner"){
-      this._router.navigate(['/newJoinerDashboard']);
-    }
-  }
-
 
 }

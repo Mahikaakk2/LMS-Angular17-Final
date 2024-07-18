@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Course } from '../models/course.model';
+import { UserService } from './user.service';
 
 @Injectable({
   providedIn: 'root'
@@ -19,8 +20,20 @@ export class CourseService {
   approveCourse(courseId: number): Observable<any> {
     return this.http.put<any>(`${this.apiUrl}/approve?courseId=${courseId}`, {});
   }
-  
-  // getCoursesByMentor(createdBy: number): Observable<Course[]> {
-  //   return this.http.get<Course[]>(`${this.apiUrl}/getAllCourses?createdBy=${createdBy}`);
-  // }
+
+  createCourse(course: Course): Observable<Course> {
+    return this.http.post<Course>(`${this.apiUrl}/create`, course);
+  }
+
+  getCourseById(courseId: number): Observable<Course> {
+    return this.http.get<Course>(`${this.apiUrl}/fetchCourseById?courseId=${courseId}`);
+  }
+
+  updateCourse(courseId: number, course: Course): Observable<any> {
+      return this.http.put<any>(`${this.apiUrl}/update?courseId=${courseId}`, course);
+  }
+  getCoursesByMentor(userId: number): Observable<Course[]> {
+    return this.http.get<Course[]>(`${this.apiUrl}/getAllCourses?mentorId=${userId}`);
+  }
+ 
 }
