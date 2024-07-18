@@ -19,4 +19,16 @@ export class CourseService {
   approveCourse(courseId: number): Observable<any> {
     return this.http.put<any>(`${this.apiUrl}/approve?courseId=${courseId}`, {});
   }
+
+  createCourse(course: Course): Observable<Course> {
+    return this.http.post<Course>(`${this.apiUrl}/create`, course);
+  }
+
+  getCourseById(courseId: number): Observable<Course> {
+    return this.http.get<Course>(`${this.apiUrl}/fetchCourseById?courseId=${courseId}`);
+  }
+
+  updateCourse(courseId: number, course: Course): Observable<any> {
+      return this.http.put<any>(`${this.apiUrl}/update?courseId=${courseId}`, course);
+  }
 }
