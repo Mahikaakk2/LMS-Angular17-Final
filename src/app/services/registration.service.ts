@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 // import { environment } from 'src/environments/environment';
 import { Employee } from '../models/employee.model';
 
-const NAV_URL = "http://localhost:8072/lms/employee/create";
+const NAV_URL = "http://localhost:9000/api/create";
 
 @Injectable({
   providedIn: 'root'

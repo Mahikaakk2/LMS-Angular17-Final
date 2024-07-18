@@ -35,7 +35,7 @@ import { NewJoinerListComponent } from './components/new-joiner-list/new-joiner-
     FooterComponent,
     CourseliststudentComponent,
     CourselistfalseComponent,
-    StudentQueriesComponent
+    StudentQueriesComponent,
     CourselistfalseComponent,
     MentorListComponent,
     NewJoinerListComponent
