@@ -15,6 +15,7 @@ import { MentorListComponent } from './components/mentor-list/mentor-list.compon
 import { NewJoinerListComponent } from './components/new-joiner-list/new-joiner-list.component';
 import { UpdatecourseComponent } from './components/updatecourse/updatecourse.component';
 import { CoursesbymentorComponent } from './components/coursesbymentor/coursesbymentor.component';
+import { DeletecourseComponent } from './components/deletecourse/deletecourse.component';
 
 const routes: Routes = [
   { path: '', component: WelcomepageComponent },
@@ -32,7 +33,8 @@ const routes: Routes = [
   { path: 'mentorlist', component: MentorListComponent },
   { path: 'newjoinerlist', component: NewJoinerListComponent },
   { path: 'updatecourse', component: UpdatecourseComponent },
-  { path: 'coursesbymentor', component: CoursesbymentorComponent }
+  { path: 'coursesbymentor', component: CoursesbymentorComponent },
+  { path: 'deletecourse', component: DeletecourseComponent },
 
 
 ];

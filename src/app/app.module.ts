@@ -23,6 +23,7 @@ import { NewJoinerListComponent } from './components/new-joiner-list/new-joiner-
 import { CourselisttrueComponent } from './components/courselisttrue/courselisttrue.component';
 import { CoursesbymentorComponent } from './components/coursesbymentor/coursesbymentor.component';
 import { UpdatecourseComponent } from './components/updatecourse/updatecourse.component';
+import { DeletecourseComponent } from './components/deletecourse/deletecourse.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { UpdatecourseComponent } from './components/updatecourse/updatecourse.co
     NewJoinerListComponent,
     CourselisttrueComponent,
     CoursesbymentorComponent,
-    UpdatecourseComponent
+    UpdatecourseComponent,
+    DeletecourseComponent
   ],
   imports: [
     BrowserModule,

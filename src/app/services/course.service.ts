@@ -35,5 +35,9 @@ export class CourseService {
   getCoursesByMentor(userId: number): Observable<Course[]> {
     return this.http.get<Course[]>(`${this.apiUrl}/getAllCourses?mentorId=${userId}`);
   }
- 
+
+  deleteCourse(courseId: number): Observable<any> {
+      return this.http.delete<any>(`${this.apiUrl}/delete?courseId=${courseId}`);
+    }
+
 }
