@@ -17,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CourseliststudentComponent } from './components/courseliststudent/courseliststudent.component';
 import { CourseService } from './services/course.service';
 import { CourselistfalseComponent } from './components/courselistfalse/courselistfalse.component';
+import { StudentQueriesComponent } from './components/student-queries/student-queries.component';
 import { MentorListComponent } from './components/mentor-list/mentor-list.component';
 import { NewJoinerListComponent } from './components/new-joiner-list/new-joiner-list.component';
 
@@ -33,6 +34,8 @@ import { NewJoinerListComponent } from './components/new-joiner-list/new-joiner-
     HeaderComponent,
     FooterComponent,
     CourseliststudentComponent,
+    CourselistfalseComponent,
+    StudentQueriesComponent
     CourselistfalseComponent,
     MentorListComponent,
     NewJoinerListComponent
