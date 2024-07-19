@@ -5,10 +5,6 @@ export class Query {
   newJoinerId: number;
   mentorId: number;
   courseId: number;
-  createdAt: Date;
-  createdBy: string;
-  updatedAt: Date;
-  updatedBy: string;
   status: boolean;
 
   constructor(
@@ -18,10 +14,6 @@ export class Query {
     newJoinerId: number,
     mentorId: number,
     courseId: number,
-    createdAt: Date,
-    createdBy: string,
-    updatedAt: Date,
-    updatedBy: string,
     status: boolean
   ) {
     this.queryId = queryId;
@@ -30,10 +22,6 @@ export class Query {
     this.newJoinerId = newJoinerId;
     this.mentorId = mentorId;
     this.courseId = courseId;
-    this.createdAt = createdAt;
-    this.createdBy = createdBy;
-    this.updatedAt = updatedAt;
-    this.updatedBy = updatedBy;
     this.status = status;
   }
 }

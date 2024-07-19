@@ -24,6 +24,12 @@ import { CourselisttrueComponent } from './components/courselisttrue/courselistt
 import { CoursesbymentorComponent } from './components/coursesbymentor/coursesbymentor.component';
 import { UpdatecourseComponent } from './components/updatecourse/updatecourse.component';
 import { DeletecourseComponent } from './components/deletecourse/deletecourse.component';
+import { ListQueriesComponent } from './components/list-queries/list-queries.component';
+import { MentorQueriesComponent } from './components/mentor-queries/mentor-queries.component';
+import { NewJoinerCoursesComponent } from './components/new-joiner-courses/new-joiner-courses.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -46,7 +52,12 @@ import { DeletecourseComponent } from './components/deletecourse/deletecourse.co
     CourselisttrueComponent,
     CoursesbymentorComponent,
     UpdatecourseComponent,
-    DeletecourseComponent
+    DeletecourseComponent,
+    UpdatecourseComponent,
+    ListQueriesComponent,
+    MentorQueriesComponent,
+    NewJoinerCoursesComponent,
+
   ],
   imports: [
     BrowserModule,

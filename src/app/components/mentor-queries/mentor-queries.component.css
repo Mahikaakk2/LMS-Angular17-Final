@@ -1,0 +1,43 @@
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.query-card {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.query-details {
+  margin-bottom: 10px;
+}
+
+.submit-response-button {
+  background-color: #2196F3; /* Blue background */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-response-button:hover {
+  background-color: #64b5f6; /* Light blue background on hover */
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
